@@ -1,27 +1,35 @@
 {
-  "name": "angular2-quickstart",
-  "version": "1.0.0",
-  "scripts": {
-    "start": "concurrently \"npm run tsc:w\" \"npm run lite\" ",    
-    "tsc": "tsc",
-    "tsc:w": "tsc -w",
-    "lite": "lite-server",
-    "typings": "typings",
-    "postinstall": "typings install" 
-  },
-  "license": "ISC",
   "dependencies": {
-    "angular2": "2.0.0-beta.12",
-    "systemjs": "0.19.24",
+    "angular2": "2.0.0-beta.13",
+    "es6-promise": "3.0.2",
     "es6-shim": "^0.35.0",
+    "ionic-angular": "2.0.0-beta.4",
+    "ionic-native": "^1.1.0",
+    "ionicons": "3.0.0-alpha.3",
     "reflect-metadata": "0.1.2",
     "rxjs": "5.0.0-beta.2",
     "zone.js": "0.6.6"
   },
   "devDependencies": {
-    "concurrently": "^2.0.0",
-    "lite-server": "^2.1.0",
-    "typescript": "^1.8.9",
-    "typings":"^0.7.9"
-  }
+    "del": "2.2.0",
+    "gulp": "3.9.1",
+    "gulp-watch": "4.3.5",
+    "ionic-gulp-browserify-es2015": "^1.0.2",
+    "ionic-gulp-fonts-copy": "^1.0.0",
+    "ionic-gulp-html-copy": "^1.0.0",
+    "ionic-gulp-sass-build": "^1.0.0",
+    "ionic-gulp-scripts-copy": "^1.0.0",
+    "run-sequence": "1.1.5"
+  },
+  "name": "myionic2project",
+  "description": "MyIonic2Project: An Ionic project",
+  "cordovaPlugins": [
+    "cordova-plugin-device",
+    "cordova-plugin-console",
+    "cordova-plugin-whitelist",
+    "cordova-plugin-splashscreen",
+    "cordova-plugin-statusbar",
+    "ionic-plugin-keyboard"
+  ],
+  "cordovaPlatforms": []
 }
